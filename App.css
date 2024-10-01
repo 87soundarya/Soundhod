@@ -1,0 +1,387 @@
+/*App.jsx*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-color: #004d80;
+  color: white;
+  text-align: center;
+  padding: 10px ;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.logodiv {
+  justify-content: right;
+  height: 30px;
+  width: 30px;
+
+}
+
+.logo {
+  justify-content: right;
+  border-right: 40px;
+  padding-right: 40px;
+  height: 170px;
+  margin-left: 30px;
+  width: auto;
+  animation: rotateLogo 5s infinite alternate;
+}
+
+.subheading {
+  font-size: 20px;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.Head {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #ffff66;
+  text-shadow: 2px 2px 4px #000000de;
+  animation: colorChange 10s infinite alternate;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ffff66;
+  }
+  100% {
+    color: #ffcc00;
+  }
+}
+
+
+/*Navbar*/
+.Navbar {
+
+  display: flex;
+  
+  border: #e4e8ec 5px solid;
+  justify-content: center;
+  background-color: #0077b6; /* Navbar background color */
+  padding: 5px;
+  width: 100%;
+ 
+  
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 230px; /* Space between the title and navbar */
+}
+
+.nav-link {
+  color: rgb(24, 12, 12);
+  text-decoration: none;
+  font-size: 18px;
+  
+  
+  border-style: inset;
+  background-color: aqua;
+  font-weight: bold;
+  height: 20px;
+  
+  margin: 0 15px;
+  padding: 8px 40px 8px 40px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  background-color: #cdc839; /* Link hover background color */
+  color: #004d80; /* Link hover text color */
+  transform: translateY(-3px); /* Slight hover lift effect */
+}
+
+/* Fade-in Animation for the Navbar */
+.Navbar {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .Head {
+    font-size: 22px;
+  }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 8px 12px;
+  }
+}
+/* /*home img */
+.kpt1{
+  margin-top: 2px;
+
+  justify-content: center;
+  border-right: 40px;
+  padding-right: 40px;
+
+  height: 170px;
+  margin-left: 30px;
+  width: auto;
+}
+.kpt{
+  margin-left: 100px;
+  margin-top: 5px;
+  height: 300px;
+  width: 1200px;
+  background-color: #a2d2ff;
+}
+.home{background-color: #6a8cab;
+height: 100%;
+width: 100%;}
+
+.col{
+  padding: 1rem;
+  background-color: #a2d2ff;
+}
+
+
+
+.h24{
+  display: flex;
+  justify-content: center;
+  color: rgb(11, 56, 56);
+  font-weight: 800;
+  font-size: 28px;
+  text-shadow: #4a7dac;
+  
+  padding-left: 6%;
+  text-align: center;
+
+}.homepara{
+  color: #171010;
+}
+
+/*department*/
+/* Styling for the body of the CS component */
+.CSbody1 {
+  margin-top: 0%;
+  place-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #137c8f;
+  padding: 30px;
+  margin:10px;
+  color: #333;
+
+  max-width: 1400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(38, 28, 28, 0.2);
+  border: 2px solid #251b1b;
+}
+
+/* Heading styling */
+.CShead1 {
+  text-align: center;
+  color: #304356;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-shadow: 5px 5px 5px rgba(178, 160, 160, 0.1);
+}
+.imgdiv{display: flex; /* Use flexbox to align content */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Image styling */
+.kptimg {
+  width: 300px; /* Adjust the size as needed */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image hover effect */
+.kptimg:hover {
+  transform: scale(1.05);
+}
+
+/* Description text styling */
+.descript{
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: #0e0b0b;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #4a7681;
+  border-radius: 8px;
+  border: 1px solid #171010;
+}
+
+/* Vision and Mission heading styles */
+.vision, .mission {
+  font-size: 2rem;
+  color: #0a391e;
+  text-align: center;
+  margin: 30px 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Vision and Mission text styles */
+.visionText, .missionText {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: justify;
+  margin: 10px 0;
+  line-height: 1.6;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect on text */
+.visionText:hover, .missionText:hover {
+  background-color: #e0e0e0;
+  color: #3114c3;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* General container for Vision and Mission */
+span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Button (if needed for future use) */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .Head {
+    font-size: 24px;
+   }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .nav-link {
+    padding: 8px 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Head {
+    font-size: 22px;
+  }
+
+  .subheading {
+    font-size: 16px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 6px 10px;
+    margin: 0 8px;
+  }
+
+  .CShead1 {
+    font-size: 2rem;
+  }
+
+  .descript {
+    font-size: 1rem;
+  }
+
+  .kptimg {
+    width: 200px;
+  }
+
+  .vision, .mission {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title, .Head {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  .CShead1 {
+    font-size: 1.5rem;
+  }
+
+  .descript, .visionText, .missionText {
+    font-size: 0.9rem;
+  }
+
+  .kptimg {
+    width: 150px;
+  }
+}
